@@ -66,3 +66,4 @@ function SigImageCallback( str )
 {
     document.sigForm.sigImageData.value = str;
 }
+
