@@ -11,5 +11,6 @@
         "package",
         "webappaloosa",
         "SigWeb"
-    ]
+    ],
+    "typings": "typings.d.ts"
 }
