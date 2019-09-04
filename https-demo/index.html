@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Topaz SigWeb Demo</title>
+    </head>
+<body>
+
+
+    <table border="1" cellpadding="0"  width="500">
+
+        <tr>
+            <td height="100" width="500">
+                <canvas id="cnv" name="cnv" width="500" height="100"></canvas>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <canvas name="SigImg" id="SigImg" width="500" height="100"></canvas>
+
+
+    <form action="#" name=sigForm>
+
+        <p>
+            <input id="SignBtn" name="SignBtn" type="button" value="Sign"  onclick="onSign()"/>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input id="button1" name="ClearBtn" type="button" value="Clear" onclick="onClear()"/>&nbsp;&nbsp;&nbsp;&nbsp
+
+            <input id="button2" name="DoneBtn" type="button" value="Done" onclick="onDone()"/>&nbsp;&nbsp;&nbsp;&nbsp
+
+            <input type="hidden" name="bioSigData">
+
+            <input type="hidden" name="sigImgData">
+
+            <br>
+
+            <br>
+
+            <textarea name="sigStringData" rows="20" cols="50">SigString: </textarea>
+
+            <textarea name="sigImageData" rows="20" cols="50">Base64 String: </textarea>
+
+        </p>
+
+    </form>
+
+
+    <br>
+    <br>
+
+<!--SigWebTablet.js is required for SigWeb to function-->
+<!--SigWebTablet.js is located here and may be copied for your own use-->
+<!--http://www.sigplusweb.com/SigWebTablet.js-->
+<script type="text/javascript" src="../SigWebTablet.js"></script>
+
+<script type="text/javascript" src="https-demo.js"></script>
+
+
+</body>
+</html>
